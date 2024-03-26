@@ -1,0 +1,29 @@
+.showtrans {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-width: 2px;
+    border-color: rgb(0, 89, 255);
+    border-radius: 2px;
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  .showtrans > p {
+    flex: 1; /* Each paragraph takes equal width */
+    /* Or use width: 33.33%; if you want fixed width */
+    margin: 0 5px; /* Adjust margins between paragraphs */
+  }
+  
+  .showtrans > button {
+    flex-shrink: 0; /* Prevent button from shrinking */
+    width: auto; /* Let button size itself based on content */
+    /* Or specify a fixed width if you want */
+    margin-left: auto; /* Push button to the end */
+    padding: 5px;
+    background: #ff4141;
+    color: white;
+    border-radius: 2px;
+  }
+
+  
