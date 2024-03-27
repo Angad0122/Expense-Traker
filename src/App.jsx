@@ -46,11 +46,13 @@ function App() {
       if (!signElement) {
         alert("Please select type of transaction");
       } else {
+        const transtime = new Date().toLocaleTimeString();
         const sign = signElement.value;
         const newTransaction = {
           name: transName,
           amount: parseFloat(transAmount),
           sign: sign,
+          time: transtime,
         };
         console.log(newTransaction);
         addTransaction(newTransaction);
@@ -134,8 +136,8 @@ function App() {
             </div>
           </div>
           <hr className="h-px my-5 mx-12 bg-gray-200 border-0 dark:bg-gray-500" />
-        <ShowGraph/>
         </div>
+        <ShowGraph/>
       </div>
   );
 }
